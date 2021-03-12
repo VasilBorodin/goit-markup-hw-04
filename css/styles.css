@@ -169,18 +169,30 @@ img {
 /* ===============END HEADER=============== */
 
 /* ===============HERO=============== */
+.hero {
+  padding: 200px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2f303a;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero/bg.jpg");
+}
+
 .container-hero {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   flex-direction: column;
 }
-.hero {
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background: #2f303a;
-}
+
 .hero-title {
   display: flex;
   margin: 0 auto;
@@ -344,8 +356,10 @@ img {
 
 /* ===============FOOTER=============== */
 .footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   height: 252px;
-  left: 0px;
   background: #2f303a;
 }
 
