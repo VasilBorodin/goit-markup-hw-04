@@ -44,6 +44,10 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
 /*  */
 
 /* ===============HEADER=============== */
@@ -84,6 +88,10 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
+}
+.header-contacts-link-icon {
+  display: block;
+  margin: 0 10px 0 0;
 }
 .navigation-logo {
   margin-right: 93px;
@@ -229,7 +237,6 @@ img {
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  /* position: absolute; */
   width: 200px;
   height: 50px;
   left: 700px;
@@ -269,6 +276,18 @@ img {
   text-transform: none;
   color: var(--first-color);
 }
+.feature-head-tilte {
+  height: 120px;
+  margin: 0 0 30px 0;
+  padding: 25px 0;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.advantages {
+  display: block;
+  margin: 0 auto;
+}
+
 /* ===============END OCCUPATION=============== */
 
 /* ===============STUDY-SECTION=============== */
@@ -320,6 +339,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .name-subtitle {
+  margin-left: 32px;
+  margin-right: 32px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Roboto", sans-serif;
@@ -352,7 +373,89 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
+
+.team-card-item {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-list-icon {
+  fill: #afb1b8;
+}
+.team-card-list-link:hover .social-list-icon,
+.team-card-list-link:focus .social-list-icon {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.team-card-list:hover,
+.team-card-list:focus {
+  background-color: #2196f3;
+}
+
 /* ===============END STUDY-TEAM=============== */
+
+/* ===============REGULAR CUSTOMERS=============== */
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  left: 215px;
+  top: 2401px;
+}
+.clients-link {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #ffffff;
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+.clients-link:hover .clients-link-icon,
+.clients-link:focus .clients-link-icon {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.clients-link-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+/* ===============END REGULAR CUSTOMERS=============== */
 
 /* ===============FOOTER=============== */
 .footer {
@@ -362,11 +465,10 @@ img {
   height: 252px;
   background: #2f303a;
 }
-
 .address {
+  display: flex;
+  width: 231px;
   font-family: "Raleway", sans-serif;
-  height: 81px;
-  left: 215px;
 }
 .address-list {
   padding-top: 60px;
@@ -374,7 +476,9 @@ img {
 
 .navigation-address {
   display: flex;
+  display: block;
   padding-top: 20px;
+  width: 231px;
 }
 .subtitle-text {
   margin-top: 10px;
@@ -426,6 +530,51 @@ img {
   color: var(--accent-color);
 }
 
+.social-list {
+  display: block;
+  padding-top: 72px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+.social-list:not(:last-child) {
+  margin-right: 70px;
+}
+.social-title {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-title-item {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #2196f3;
+}
+.social-list-link:hover .social-li-icon,
+.social-list-link:focus .social-li-icon {
+  fill: #ffffff;
+}
+.social-li-icon {
+  fill: #ffffff;
+}
 /* ===============END FOOTER=============== */
 
 /* ===============PORTFOLIO=============== */
