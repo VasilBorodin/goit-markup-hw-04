@@ -58,8 +58,6 @@ img {
   padding-right: 15px;
 }
 .header {
-  /* width: 1600px; */
-  height: 0px;
   left: 0px;
   top: 80px;
   border: 1px solid #ececec;
@@ -153,6 +151,7 @@ img {
   color: var(--accent-color);
 }
 .mail-link {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -169,6 +168,11 @@ img {
 }
 .navigation-nav {
   margin-right: 50px;
+}
+.header-contacts-link-icon {
+  display: block;
+  content: "";
+  margin-right: 10px;
 }
 /* ===============END HEADER=============== */
 
